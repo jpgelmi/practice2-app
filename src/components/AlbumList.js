@@ -16,7 +16,7 @@ export default function AlbumList(){
 
     //console.log(data, "Hola")
     return (
-        <View>
+        <View style = {styles.container}>
            {map(data, (item, index) => (
                 <Card key = {index} item = {item}/>
             ))}
@@ -24,4 +24,8 @@ export default function AlbumList(){
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        alignItems: "center"
+    }
+})

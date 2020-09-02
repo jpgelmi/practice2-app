@@ -14,8 +14,16 @@ export default function Card(props) {
 
 const styles = StyleSheet.create({
     container:{
-       // flex: 1,
-        padding: 30,
+        //flex: 1,
+        alignItems: "center",
+        backgroundColor: "#fff",
+        height: 300,
+        width:300,
+        shadowColor: "black",
+        shadowOffset:{ width: 3, height: 3},
+        shadowOpacity: 1,
+        marginVertical:10 
 
+        
     }
 })
