@@ -1,8 +1,8 @@
 import React , {useState, useEffect} from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import {getMusicAlbums} from "../api/Api"
-import AlbumDetails from "./AlbumDetails"
 import {map} from "lodash"
+import Card from "./Card"
 
 export default function AlbumList(){
     const [data, setData] = useState()
@@ -15,15 +15,10 @@ export default function AlbumList(){
     },[])
 
     //console.log(data, "Hola")
-
-    function RenderItems(data){
-            
-    }
-
     return (
         <View>
            {map(data, (item, index) => (
-                <AlbumDetails key = {index} item = {item}/>
+                <Card key = {index} item = {item}/>
             ))}
         </View>
     )
