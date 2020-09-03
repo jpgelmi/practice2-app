@@ -10,3 +10,4 @@ export default function Text() {
 }
 
 const styles = StyleSheet.create({})
+ 

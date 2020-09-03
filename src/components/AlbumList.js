@@ -9,7 +9,7 @@ export default function AlbumList(){
 
     useEffect(() => {
         getMusicAlbums().then((response) => {
-            //console.log(response)
+            console.log(response)
             setData(response)
         }) 
     },[])
@@ -29,3 +29,4 @@ const styles = StyleSheet.create({
         alignItems: "center"
     }
 })
+ 
