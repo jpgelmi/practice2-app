@@ -7,10 +7,8 @@ export default function Card(props) {
     const{item} = props
     return (
         <View style = {styles.container}>
-            <Text>
-                {item.title}
-            </Text>
-            <ImageComponent />
+            <TextComponent data = {item}/>
+            <ImageComponent data = {item}/>
         </View>
     )
 }
