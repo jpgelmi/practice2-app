@@ -1,12 +1,18 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image} from 'react-native'
 
-export default function Image() {
+export default function Image(props) {
     return (
         <View>
-            <Text></Text>
+            <Image source = {{uri: }}/>
         </View>
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    image:{
+        borderRadius: 10,
+        height: 100,
+        width: 100
+    }
+})
