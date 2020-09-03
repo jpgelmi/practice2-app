@@ -6,19 +6,24 @@ export default function ImageComponent(props) {
     console.log(data.image)
 
     return (
-        <View>
+        <View style = {styles.container}>
             <Image
                 source = {{uri: data.image }}
-                styles = {styles.image}/>
+                style = {styles.image}
+            />
         </View>
     )
 }
 
 const styles = StyleSheet.create({
+    container:{
+        alignItems: "flex-start",
+        justifyContent: "center"
+    },
     image:{
         borderRadius: 10,
-        height: 100,
-        width: 100
+        height: 250,
+        width: 250,
     }
 })
  
