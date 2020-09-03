@@ -4,7 +4,9 @@ import { StyleSheet, Text, View, Image} from 'react-native'
 export default function Image(props) {
     return (
         <View>
-            <Image source = {{uri: }}/>
+            <Image
+                source = {{uri: }}
+                styles = {styles.image}/>
         </View>
     )
 }

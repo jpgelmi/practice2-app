@@ -1,5 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import ImageComponent from "../components/cardComponents/Image"
+import TextComponent from "./cardComponents/Text"
 
 export default function Card(props) {
     const{item} = props
@@ -8,6 +10,7 @@ export default function Card(props) {
             <Text>
                 {item.title}
             </Text>
+            <ImageComponent />
         </View>
     )
 }
