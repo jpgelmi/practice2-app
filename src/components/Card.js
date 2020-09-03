@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import ImageComponent from "../components/cardComponents/Image"
 import TextComponent from "./cardComponents/Text"
+import ButtonComponent from "./cardComponents/Button"
 
 export default function Card(props) {
     const{item} = props
@@ -9,6 +10,7 @@ export default function Card(props) {
         <View style = {styles.container}>
             <TextComponent data = {item}/>
             <ImageComponent data = {item}/>
+            <ButtonComponent data = {item}/>
         </View>
     )
 }
@@ -18,13 +20,12 @@ const styles = StyleSheet.create({
         //flex: 1,
         alignItems: "center",
         backgroundColor: "#fff",
-        height: 300,
+        height: 390,
         width: 300,
         shadowColor: "black",
         shadowOffset:{ width: 3, height: 3},
         shadowOpacity: 0.2,
         marginVertical: 10, 
         borderRadius: 20
-        
     }
 })

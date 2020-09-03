@@ -11,8 +11,7 @@ export default function TextComponent({data}) {
 
 const styles = StyleSheet.create({
     container:{
-        paddingTop: 5,
-        paddingBottom: 20
+        paddingVertical: 20
     },
     textStyle:{
         fontSize: 15,
